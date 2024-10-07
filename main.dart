@@ -1,22 +1,22 @@
 void main() {
-  String string = "opps";
+  String string = "oops";
   string = "viin";
 
   dynamic dyna = "oops";
   dyna = 123;
 
-  final String fin = "opps"; //
+  final String fin = "oops"; //
   // test3 = "viin"; // error
 
   late final String late; // 값이 타입 변수를 선언
   // final String test4; // error
-  late = "opps";
+  late = "oops";
 
-  const con = "opps";
+  const con = "oops";
   // const API = "someting"; // error
   //api값은 변경돼서 final or var를 사용해야됨, 항상 고정값만 적용 가능
 
-  String? optional = "opps"; //  string 타임과 null 타입을 같이 사용할 때
+  String? optional = "oops"; //  string 타임과 null 타입을 같이 사용할 때
   optional = null;
 
   num numb = 123; // int
@@ -28,7 +28,7 @@ void main() {
   lis.first; // 1
   print(lis.last); // 5
 
-  String name = "opps";
+  String name = "oops";
   int age = 10;
   String greeting = "Hello, I'm $name, nice to meet you! and I'm ${age + 2}";
   print(greeting);
@@ -39,7 +39,7 @@ void main() {
 
   var playerMap = {
     // Map
-    "name": "opps",
+    "name": "oops",
     "xp": "19.99",
     "superpower": false,
   };
@@ -55,7 +55,7 @@ void main() {
   }; // 쓸모없지만 이런식으로 사용 가능
 
   List<Map<String, Object>> object3 = [
-    {"name": "opps", "xp": 1230000.44},
+    {"name": "oops", "xp": 1230000.44},
     {"name": "viin", "xp": 1230000.44},
   ];
 
@@ -67,38 +67,38 @@ void main() {
   set2.add(1); // 추가가 안된다.
   print(set1);
   print(set2);
-  sayHello1("opps");
-  print(sayHello2("opps"));
-  print(sayHello3("opps"));
-  print(sayHello4("opps", 20, "bahama"));
+  sayHello1("oops");
+  print(sayHello2("oops"));
+  print(sayHello3("oops"));
+  print(sayHello4("oops", 20, "bahama"));
   print(sayHello5(
-    name: "opps",
+    name: "oops",
     age: 20,
     country: "bahama",
   ));
   // print(sayHello6(
-  //   name: "opps",
+  //   name: "oops",
   //   age: 20,
   // ));
   capitalizeName1(null);
   capitalizeName2(null);
-  print(sayHi({"name": "opps"}));
+  print(sayHi({"name": "oops"}));
 
   var player1 = Player1(); // new Player() new를 생략할 수 있음
   player1.sayHello1();
   player1.sayHello2();
 
-  var player2 = Player2("opps", 20);
+  var player2 = Player2("oops", 20);
   player2.sayHello();
 
-  var player3 = Player3("opps", 20);
+  var player3 = Player3("oops", 20);
   player3.sayHello();
 
-  var player4 = Player4(name: "opps", xp: 20, team: "blue", age: 20);
+  var player4 = Player4(name: "oops", xp: 20, team: "blue", age: 20);
   player4.sayHello();
 
   var bluePlayer = Player5.createBluePlayer(
-    name: "opps",
+    name: "oops",
     age: 21,
   );
   bluePlayer.sayHello();
@@ -139,7 +139,7 @@ void main() {
     ..walk() // oops.walk();
     ..sayHello(); // oops.sayHello();
 
-  var player8 = Player8(team: Team.red, name: "opps");
+  var player8 = Player8(team: Team.red, name: "oops");
   player8.sayHello();
   var player9 = Player9(team: Team.red);
   player9.sayHello();
@@ -174,9 +174,9 @@ String sayHello5({required String name, int? age, String country = 'seoul'}) {
 String sayHello6(String name, int age, [String? country = 'seoul']) =>
     "Hello $name, you are $age, and you come form $country";
 
-String capitalizeName1(String? name) => name?.toUpperCase() ?? "opps";
+String capitalizeName1(String? name) => name?.toUpperCase() ?? "oops";
 
-String capitalizeName2(String? name) => name ??= "opps";
+String capitalizeName2(String? name) => name ??= "oops";
 
 // typedef
 typedef UserInfo = Map<String, String>;
@@ -190,7 +190,7 @@ String sayHi(UserInfo userInfo) {
  */
 
 class Player1 {
-  final String name = 'opps';
+  final String name = 'oops';
   int xp = 1500;
 
   void sayHello1() {
@@ -200,7 +200,7 @@ class Player1 {
 
   void sayHello2() {
     var name = "viin"; // final임에도 재 선언하면 this를 사용해서 선언할 수 있다. (권장 방법은 아님)
-    print("Hi my name is ${this.name}"); // opps
+    print("Hi my name is ${this.name}"); // oops
     print("Hi my name is ${name}"); // viin
   }
 }
